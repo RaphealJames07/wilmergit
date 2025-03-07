@@ -2,13 +2,16 @@ import React from "react";
 
 const Profile = () => {
   return (
-    <div>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic soluta
-      explicabo placeat deleniti similique obcaecati, ipsam minus ex impedit
-      nisi voluptate velit! Eius, quasi. Quisquam minus, distinctio odio
-      incidunt ullam quasi non beatae voluptatem amet, eum hic fugit itaque
-      delectus?
-    </div>
+    <>
+      <p>My profile branch</p>
+      <span>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore quos
+        consectetur dolores cupiditate repellat eligendi velit, distinctio
+        voluptatum nam sunt est eos impedit. Enim, natus voluptatibus. Ea
+        accusantium necessitatibus voluptatibus quod rem ex animi temporibus
+        doloribus!
+      </span>
+    </>
   );
 };
 
