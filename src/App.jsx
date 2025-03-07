@@ -1,42 +1,47 @@
-import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router'
-import Home from './pages/Home'
-import PrivateRoute from './routes/PrivateRoute'
-import Profile from './pages/dashboard/Profile'
-import BankDetails from './pages/dashboard/BankDetails'
-import Login from './pages/auth/Login'
-import Verify from './pages/auth/Verify'
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router";
+import Home from "./pages/Home";
+import PrivateRoute from "./routes/PrivateRoute";
+import Profile from "./pages/dashboard/Profile";
+import BankDetails from "./pages/dashboard/BankDetails";
+import Login from "./pages/auth/Login";
+import Verify from "./pages/auth/Verify";
+import About from "./pages/About";
 
 const App = () => {
   const routes = createBrowserRouter([
     {
-      path:"",
-      element: <Home/>,
+      path: "",
+      element: <Home />,
     },
     {
-      path:"/login",
-      element: <Login/>,
+      path: "/login",
+      element: <Login />,
     },
     {
-      path:"/verify",
-      element: <Verify/>,
+      path: "/about",
+      element: <About />,
     },
     {
-      path:"user",
-      element: <PrivateRoute/>,
+      path: "/verify",
+      element: <Verify />,
+    },
+    {
+      path: "user",
+      element: <PrivateRoute />,
       children: [
         {
           path: "profile",
-          element: <Profile/>
+          element: <Profile />,
         },
         {
           path: "bank-details",
-          element: <BankDetails/>
+          element: <BankDetails />,
         },
-      ]
-    }
-  ])
-  return <RouterProvider router={routes}/>
-}
+      ],
+    },
+  ]);
+  return <RouterProvider router={routes} />;
+};
 
-export default App
+export default App;
