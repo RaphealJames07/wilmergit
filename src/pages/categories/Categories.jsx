@@ -2,7 +2,7 @@ import React from 'react'
 
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <div>Categories is where I worked on</div>
   )
 }
 
